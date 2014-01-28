@@ -1,0 +1,6 @@
+Probleme:
+- Mehrfachverweise von gamegrid und playerData auf diesselben Peons ( macht das Ändern von einem Peon sehr umständlich!)
+- playerOne und playerTwo -> evtl. ein Array daraus machen
+
+evtl Lösung:
+playerData hat nurnoch die ID vom Peon (muss nur geändert werden, wenn jemand neues hinzu kommt oder entfernt wird)

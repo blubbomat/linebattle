@@ -1,0 +1,4 @@
+health : 1
+damage : 20
+shootingRange : 4
+damageRadius : 1

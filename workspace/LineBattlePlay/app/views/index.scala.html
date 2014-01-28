@@ -1,0 +1,22 @@
+@( title : String, gameController : Game )
+
+@import helper._
+
+@main( title ) {	
+	<div>
+		<table>
+			<tr>
+				<td class="GameField">
+					<div class="GameField">
+						@game( gameController )
+					</div>
+				</td>
+				<td class="Menu">
+					<div class="Menu">
+						@menu( gameController )
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+}

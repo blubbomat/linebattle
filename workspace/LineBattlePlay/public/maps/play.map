@@ -1,0 +1,100 @@
+# map <width> <height>
+map 30 20
+
+# base <x> <y> <orientation> <startressourcen> 
+# playerId will be generated automatically (0,1,2,3,..)
+base 2 10 East 100
+base 27 10 West 100
+# tower <factoryId> <x> <y> <orientation>  <towerlineId>
+tower tower 4 2 South 0
+tower tower 24 2 South 0
+
+tower tower 4 17 North 1
+tower tower 24 17 North 1
+
+# peon  <factoryId> <x> <y> <orientation> <playerId>
+peon tank 2 8 East 0
+peon tank 2 12 East 0
+
+peon tank 27 8 West 1
+peon tank 27 12 West 1
+
+# staticobject <factoryId> <x> <y> <orientation> 
+# Letter P
+staticobject tree 4 5 South
+staticobject tree 5 5 South
+staticobject tree 6 5 South
+staticobject tree 7 5 South
+staticobject tree 8 6 South
+staticobject tree 8 7 South
+staticobject tree 8 8 South
+staticobject tree 8 9 South
+staticobject tree 7 10 South
+staticobject tree 6 10 South
+staticobject tree 5 10 South
+staticobject tree 4 6 South
+staticobject tree 4 7 South
+staticobject tree 4 8 South
+staticobject tree 4 9 South
+staticobject tree 4 10 South
+staticobject tree 4 11 South
+staticobject tree 4 12 South
+staticobject tree 4 13 South
+staticobject tree 4 14 South
+
+#Letter L
+staticobject tree 10 5 South
+staticobject tree 10 6 South
+staticobject tree 10 7 South
+staticobject tree 10 8 South
+staticobject tree 10 9 South
+staticobject tree 10 10 South
+staticobject tree 10 11 South
+staticobject tree 10 12 South
+staticobject tree 10 13 South
+staticobject tree 10 14 South
+staticobject tree 11 14 South
+staticobject tree 12 14 South
+staticobject tree 13 14 South
+
+#Letter A
+staticobject tree 16 5 South
+staticobject tree 17 5 South
+staticobject tree 18 5 South
+staticobject tree 15 6 South
+staticobject tree 15 7 South
+staticobject tree 15 8 South
+staticobject tree 15 9 South
+staticobject tree 15 10 South
+staticobject tree 15 11 South
+staticobject tree 15 12 South
+staticobject tree 15 13 South
+staticobject tree 15 14 South
+staticobject tree 19 6 South
+staticobject tree 19 7 South
+staticobject tree 19 8 South
+staticobject tree 19 9 South
+staticobject tree 19 10 South
+staticobject tree 19 11 South
+staticobject tree 19 12 South
+staticobject tree 19 13 South
+staticobject tree 19 14 South
+staticobject tree 16 10 South
+staticobject tree 17 10 South
+staticobject tree 18 10 South
+
+#Letter Y
+staticobject tree 23 14 South
+staticobject tree 23 13 South
+staticobject tree 23 12 South
+staticobject tree 23 11 South
+staticobject tree 23 10 South
+staticobject tree 23 9 South
+staticobject tree 22 8 South
+staticobject tree 24 8 South
+staticobject tree 21 7 South
+staticobject tree 25 7 South
+staticobject tree 21 6 South
+staticobject tree 25 6 South
+staticobject tree 21 5 South
+staticobject tree 25 5 South

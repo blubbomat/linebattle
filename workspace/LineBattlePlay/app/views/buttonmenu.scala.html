@@ -1,0 +1,58 @@
+@( gameController : Game )
+
+@import helper._
+
+<div class="ButtonMenu">
+	
+	@if( gameController.controller.gameField.getWinner == None ) {
+	
+		@movecross( gameController )
+		
+		<table>
+			<tr>
+				<td>
+					@form( routes.PlayGameController.shoot ) {
+						<input type="submit" value="Shoot"/>
+					}
+				</td>
+				<td>
+					@form( routes.PlayGameController.spawnPeon( "tank" ) ) {
+						<input type="submit" value="Spawn tank"/>
+					}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@form( routes.PlayGameController.selectNextPeon ) {
+						<input type="submit" value="Next peon"/>
+					}
+				</td>
+				<td>
+					@form( routes.PlayGameController.spawnPeon( "launcher" ) ) {
+						<input type="submit" value="Spawn launcher"/>
+					}
+				</td>
+			</tr>
+			<tr>
+				<td>
+					@form( routes.PlayGameController.endRound ) {
+						<input type="submit" value="Next player"/>
+					}
+				</td>
+				<td>
+					@form( routes.PlayGameController.spawnPeon( "infantry" ) ) {
+						<input type="submit" value="Spawn infantry"/>
+					}
+				</td>
+			</tr>
+		</table>
+		
+		<br>
+		
+	}
+	
+	@form( routes.PlayGameController.endGame ) {
+		<input type="submit" value="End current game"/>
+	}
+	
+</div>

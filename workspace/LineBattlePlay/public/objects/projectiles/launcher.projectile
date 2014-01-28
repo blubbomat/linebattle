@@ -1,0 +1,5 @@
+health : 1
+displayId : 202
+damage : 40
+shootingRange : 6
+damageRadius : 2

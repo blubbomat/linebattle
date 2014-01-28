@@ -1,0 +1,26 @@
+# map <width> <height>
+map 30 9
+
+# base <x> <y> <orientation> <startressourcen> 
+# playerId will be generated automatically (0,1,2,3,..)
+base 2 4 East 100
+base 27 4 West 100
+
+# tower <factoryId> <x> <y> <orientation>  <towerlineId>
+#conqeured tower by player 1
+tower tower 9 2 South 0
+
+# not conquered tower
+tower tower 13 2 North 0
+
+# peon  <factoryId> <x> <y> <orientation> <playerId>
+peon tank 5 4 East 1
+peon tank 9 3 North 1
+
+peon tank 13 3 East 0
+peon tank 14 2 North 1
+
+# staticgameobject <factoryId> <orientation>  <x> <y>
+staticgameobject tree 3 8 South
+
+peon tank 28 8 East 0

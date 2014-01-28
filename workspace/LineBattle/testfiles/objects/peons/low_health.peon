@@ -1,0 +1,7 @@
+health : 1
+displayId : 101
+actionPoints : 10
+movingCosts : 3
+shootingCosts : 4
+buildCosts : 10
+projectile : projectileTank

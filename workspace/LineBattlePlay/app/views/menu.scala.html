@@ -1,0 +1,28 @@
+@( gameController : Game )
+
+@import helper._
+
+@if( !gameController.controller.isGameRunning ) {
+
+	<div class="ButtonMenu">
+	
+		@form( routes.PlayGameController.newGame ) {
+			<input type="submit" value="Create New Game"/>
+		}
+		
+	</div>
+}
+
+@if( gameController.controller.isGameRunning ) {
+
+	@if( gameController.controller.gameField.getWinner == None ) {
+
+		@playermenu( gameController )
+		
+		@peonmenu( gameController )
+	
+	}
+	
+	@buttonmenu( gameController )
+	
+}

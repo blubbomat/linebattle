@@ -1,0 +1,14 @@
+# Home page
+GET		/						controllers.PlayGameController.index
+
+# File access
+GET     /assets/*file       	controllers.Assets.at( path="/public", file)
+
+# Game Requests
+GET		/newGame				controllers.PlayGameController.newGame
+GET		/endGame				controllers.PlayGameController.endGame
+GET		/movePeon/:orientation	controllers.PlayGameController.movePeon( orientation : Int )
+GET		/shoot					controllers.PlayGameController.shoot
+GET		/selectNextPeon			controllers.PlayGameController.selectNextPeon
+GET		/spawnPeon/:id			controllers.PlayGameController.spawnPeon( id : String )
+GET		/endRound				controllers.PlayGameController.endRound

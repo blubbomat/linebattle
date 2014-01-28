@@ -1,0 +1,83 @@
+@( gameController : Game )
+
+@if( !gameController.controller.isGameRunning ) {
+	
+	<div align="center">
+		<img src="@routes.Assets.at( "images/title.png" )"/>
+	</div>
+}
+
+@if( gameController.controller.isGameRunning ) {
+	
+	<div class="GameFieldStarted">
+	
+	@if( gameController.controller.gameField.getWinner != None ) {
+		
+		<p class="WinnerField">
+			Player
+			@( gameController.controller.gameField.getWinner.get + 1 )
+			wins!
+		</p>
+			
+	}
+	
+	@if( gameController.controller.gameField.getWinner == None ) {
+	
+			<table>
+			
+				@for( row <- 0 to Game.getFieldHeight( gameController) - 1 ) {
+			
+					<tr>
+						@for( col <- 0 to Game.getFieldWidth( gameController ) - 1 ) {
+						
+							<td align="center" bgcolor="@Game.getFieldColor( gameController, row, col )">
+							
+								<img class="GameField"
+								
+								@if( Game.isFieldEmpty( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/empty.png" )"
+								}
+								
+								@if( Game.isTank( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/tank.png" )"
+								}
+								
+								@if( Game.isLauncher( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/launcher.png" )"
+								}
+								
+								@if( Game.isInfantry( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/infantry.png" )"
+								}
+								
+								@if( Game.isBase( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/base.png" )"
+								}
+								
+								@if( Game.isTree( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/tree.png" )"
+								}
+								
+								@if( Game.isTower( gameController, row, col ) ) {
+									src="@routes.Assets.at( "images/tower.png" )"
+								}
+								
+								@if( !Game.isFieldEmpty( gameController, row, col ) ) {
+									style="image-orientation: @Game.getObjectRotation( gameController, row, col );"
+								}
+								
+								align="middle">
+								
+							</td>
+						
+						}
+						
+					</tr>
+					
+				}
+			
+			</table>
+		}
+	
+	</div>
+}

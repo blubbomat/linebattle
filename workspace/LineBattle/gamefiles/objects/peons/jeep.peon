@@ -1,0 +1,6 @@
+health : 20
+actionPoints : 100
+movingCosts : 3
+shootingCosts : 4
+buildCosts : 5
+projectile : projectilejeep

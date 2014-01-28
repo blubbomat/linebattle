@@ -1,0 +1,7 @@
+health : 70
+displayId : 102
+actionPoints : 12
+movingCosts : 3
+shootingCosts : 3
+buildCosts : 20
+projectile : launcher

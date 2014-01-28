@@ -1,0 +1,7 @@
+health : 20
+displayId : 103
+actionPoints : 20
+movingCosts : 1
+shootingCosts : 2
+buildCosts : 5
+projectile : infantry

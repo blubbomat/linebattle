@@ -1,0 +1,11 @@
+# map <width> <height>
+map 10 10
+
+# base <x> <y> <orientation> <startressourcen> 
+# playerId will be generated automatically (0,1,2,3,..)
+base 2 4 East 100
+base 5 4 West 100
+
+base 7 7 North 200
+
+

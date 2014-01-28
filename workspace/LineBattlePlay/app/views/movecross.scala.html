@@ -1,0 +1,39 @@
+@( gameController : Game )
+
+@import helper._
+
+<table>
+	<tr>
+		<td></td>
+		<td>
+			@form( routes.PlayGameController.movePeon( 0 ) ) {
+				<input type="submit" value="North"/>
+			}
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>
+			@form( routes.PlayGameController.movePeon( 3 ) ) {
+				<input type="submit" value="West"/>
+			}
+		</td>
+		<td>
+			<p class="MenuSmallText">Move Peon</p>
+		</td>
+		<td>
+			@form( routes.PlayGameController.movePeon( 1 ) ) {
+				<input type="submit" value="East"/>
+			}
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			@form( routes.PlayGameController.movePeon( 2 ) ) {
+				<input type="submit" value="South"/>
+			}
+		</td>
+		<td></td>
+	</tr>
+</table>

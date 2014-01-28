@@ -1,0 +1,48 @@
+@( gameController : Game )
+
+<div class="PlayerMenu">
+	
+	<p class="MenuTitle"> Peon </p>
+	
+	@if( !Game.isPeonSelected( gameController ) ) {
+	
+		<p class="MenuText"> No peon selected! </p>
+	
+	}
+	
+	@if( Game.isPeonSelected( gameController ) ) {
+	
+		<table>
+			<tr>
+				<td><p class="MenuLabel"> Name: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonName( gameController ) </p></td>
+			</tr>
+			<tr>
+				<td><p class="MenuLabel"> Action-Points: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonActionPoints( gameController ) </p></td>
+			</tr>
+			<tr>
+				<td><p class="MenuLabel"> Health: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonHealth( gameController ) </p></td>
+			</tr>
+			<tr>
+				<td><p class="MenuLabel"> Orientation: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonOrientation( gameController ) </p></td>
+			</tr>
+			<tr>
+				<td><p class="MenuLabel"> Moving costs: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonMovingCosts( gameController ) </p></td>
+			</tr>
+			<tr>
+				<td><p class="MenuLabel"> Shooting costs: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonShootingCosts( gameController ) </p></td>
+			</tr>
+			<tr>
+				<td><p class="MenuLabel"> Shooting range: </p></td>
+				<td><p class="MenuValue"> @Game.getPeonShootingRange( gameController ) </p></td>
+			</tr>
+		</table>		
+	
+	}
+
+</div>

@@ -1,0 +1,24 @@
+# map <width> <height>
+map 9 9
+
+# base <x> <y> <orientation> <startressourcen> 
+# playerId will be generated automatically (0,1,2,3,..)
+base 0 4 East 100
+staticobject tree 2 4 South
+
+base 8 4 West 100
+staticobject tree 6 4 South
+
+base 4 0 South 100
+staticobject tree 4 2 South
+
+base 4 8 North 100
+staticobject tree 4 6 South
+
+# towers
+tower tower 0 0 South 0
+tower tower 8 8 South 0
+tower tower 0 8 South 0
+tower tower 8 0 South 0
+tower tower 4 4 South 0
+

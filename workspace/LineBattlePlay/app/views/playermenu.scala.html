@@ -1,0 +1,31 @@
+@( gameController : Game )
+
+@import helper._
+
+<div class="PlayerMenu">
+	
+	<p class="MenuTitle"> Player </p>
+	
+	<table>
+		<tr>
+			<td><p class="MenuLabel"> Active player: </p></td>
+			<td><p class="MenuValue"> @Game.getPlayerId( gameController ) </p></td>
+		</tr>
+		<tr>
+			<td><p class="MenuLabel"> Ressources: </p></td>
+			<td><p class="MenuValue"> @Game.getPlayerRessources( gameController ) </p></td>
+		</tr>
+		<tr>
+			<td><p class="MenuLabel"> Income per round: </p></td>
+			<td><p class="MenuValue"> @Game.getPlayerIncome( gameController ) </p></td>
+		</tr>
+		<tr>
+			<td><p class="MenuLabel"> Peons: </p></td>
+			<td><p class="MenuValue"> @Game.getPlayerPeons( gameController ) </p></td>
+		</tr>
+		<tr>
+			<td><p class="MenuLabel"> Base health: </p></td>
+			<td><p class="MenuValue"> @Game.getPlayerBaseHealth( gameController ) </p></td>
+		</tr>
+	</table>		
+</div>

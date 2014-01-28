@@ -1,0 +1,8 @@
+# Kommentare
+
+map <width> <height>
+
+base <x> <y> <orientation> <playerId> <startressourcen> // erstellt spieler
+tower <factoryId> <x> <y> <orientation>  <towerlineId>
+peon  <factoryId> <x> <y> <orientation> <playerId>
+staticObject <factoryId> <orientation>  <x> <y>

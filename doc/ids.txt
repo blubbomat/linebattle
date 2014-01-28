@@ -1,0 +1,13 @@
+DisplayIDs:
+1 Base
+2 tower
+
+101 tank
+
+201 projectileTank
+
+301 tree
+
+factoryID:
+peon tank
+

@@ -1,0 +1,6 @@
+health : 10
+actionPoints : 100
+movingCosts : 3
+shootingCosts : 10
+buildCosts : 50
+projectile : projectilelauncher
